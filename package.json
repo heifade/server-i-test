@@ -1,0 +1,26 @@
+{
+  "name": "server-i-test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "removeDist": "node ./tools/deleteOutPath.js",
+    "tsBuild": "tsc -p tsconfig.json",
+    "start": "npm run tsBuild && node ./es/main.js",
+    "build": "npm run removeDist && npm run tsBuild"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/chai": "^4.0.10",
+    "@types/mocha": "^2.2.44",
+    "@types/node": "^8.5.1",
+    "@types/supertest": "^2.0.4",
+    "chai": "^4.1.2",
+    "mocha": "^4.0.1",
+    "server-i": "0.0.1-beta15",
+    "supertest": "^3.0.0",
+    "typescript": "^2.6.2"
+  }
+}
