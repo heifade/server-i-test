@@ -1,7 +1,7 @@
-import { app } from "server-i";
+import { getApp } from "server-i";
 
 
-let server = app.listen(3000, function() {
+let server = getApp().listen(3000, function() {
   let host = server.address().address;
   let port = server.address().port;
 
