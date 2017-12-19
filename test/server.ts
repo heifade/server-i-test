@@ -1,7 +1,7 @@
 import { getApp, AppConfig } from "server-i";
-import http from "http";
+import { Server } from "http";
 
-let server: http.Server;
+let server: Server;
 export async function startServer() {
   return new Promise((resolve, reject) => {
     let setConfig = function() {
